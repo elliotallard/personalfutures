@@ -12,10 +12,8 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0",
     "react-scroll-horizontal": "^1.6.2",
-    "react-scrolllock": "^5.0.0"
-
+    "react-scrolllock": "^5.0.0",
     "react-scroll-horizontal": "^1.6.2"
-
   },
   "scripts": {
     "start": "react-scripts start",
