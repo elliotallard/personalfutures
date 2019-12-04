@@ -38,11 +38,10 @@ function App() {
           <Route exact path={appRoutes.futureBuilder}>
               <FutureBuilder />
           </Route>
-          {/*
           <Route exact path={appRoutes.theFuture}>
               <TheFuture />
           </Route>
-        */}
+
 
           <Redirect to={appRoutes.home} />
         </Switch>
