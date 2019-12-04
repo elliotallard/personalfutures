@@ -3,5 +3,6 @@ export default {
   futureBuilder: "/futurebuilder",
   about: "/about",
   thefuture: "/thefuture",
+  futures: "/thefuture/:id"
 
 };
