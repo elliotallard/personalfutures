@@ -1,0 +1,26 @@
+#Button-row {
+	max-height: 10vh;
+	vertical-align: middle;
+	margin-top: 3vh;
+}
+
+#Button-row Button {
+	padding: 15px 30px 15px 30px;
+	margin: 0px 10px 0px 10px;
+}
+
+
+
+
+.row {
+	margin-left: 0px;
+}
+
+.row.navLink {
+	display: block;
+}
+
+.row.navLink.active {
+	display: none;
+	height: -20px;
+}

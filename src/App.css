@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600,700&display=swap');
+
+.App {
+  font-family: 'Source Serif Pro', serif;
+}
+
+
+.App-header {
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+
+
+
+.App-link {
+  color: #09d3ac;
+}

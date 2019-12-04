@@ -1,0 +1,160 @@
+
+.body {
+	overflow: hidden;
+	letter-spacing: 2px;
+}
+
+html, body {margin: 0; height: 100%; overflow: hidden}
+
+.row {
+	overflow: hidden;
+}
+
+.title {
+	align-items: center;
+	justify-content: center;
+}
+
+.horizontal {
+	height: 70%;
+	align-items: center;
+
+
+}
+
+input:hover {
+ text-transform: bold;
+ font-size:17px;
+ font-size-adjust: 10px
+
+}
+
+
+input {
+ border: 0;
+ border-bottom: 2px dashed grey;
+ text-align: center;
+ background: transparent;
+ color: black;
+ font-weight: bold;
+ width: 12em;
+ transition: all 500ms;
+
+}
+
+
+input:focus {
+ outline: 0;
+	color: grey;
+	border-bottom: 2px solid grey;
+}
+
+input::placeholder {
+ color: #ABABAB;
+ font-size: 1.05em;
+ letter-spacing: 1.2px;
+
+}
+
+
+
+
+.both {
+	margin-top: -7%;
+}
+
+
+
+.horizontal img {
+	max-width: 80vh;
+	min-width: 120%;
+	vertical-align: center;
+	align-items: center;
+}
+
+.both img {
+	margin-bottom: -12%;
+	min-width: 150%;
+}
+
+.child {
+	width: 72em;
+	height: 80vh;
+}
+
+.parent {
+	width: 72em;
+	height: 77vh;
+	scroll: "no";
+	overflow: hidden;
+}
+
+
+.quadrant textarea {
+	min-height: 100%;
+	min-width: 100%;
+}
+
+#section8 p {
+	white-space: pre-wrap;
+}
+
+.quadrant {
+	height: 100%;
+	vertical-align: center;
+	align-items: center;
+	margin: 4% 0% 4% 0%;
+}
+
+.container {
+	
+	
+}
+
+
+
+
+#section8 Button {
+	padding: 5px 15px 5px 15px;
+
+}
+
+
+
+
+/*Thanks from https://codepen.io/Benny29390/pen/aWwybM, on input bars*/
+
+
+.Quadrant {
+	position: absolute;
+	background-color: #D8D8D8;
+	border-radius: 2px;
+	padding: 5px;
+	max-width: 3.5%;
+	white-space: pre-wrap;
+}
+
+#QuadrantOne {
+	left: 89%;
+}
+
+#QuadrantTwo {
+	left: 94.6%;
+}
+
+#QuadrantThree {
+	left: 89%;
+	top: 55%;
+}
+
+#QuadrantFour {
+	left: 94.6%;
+	top: 55%;
+}
+
+
+#section8 h3 {
+	max-width: 80%;
+}
+
+
