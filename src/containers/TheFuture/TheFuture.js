@@ -55,13 +55,15 @@ class Futures extends Component {
 
       <div className="container">
         <br />
-        <h1>Characters that we love...</h1>
+        <div className="row">
+          <center><h1>The Future</h1></center>
+        </div>
         <div className="row">
           {this.state.futureList.map((future, idx) => {
             return (
               <Link
                 key={future.id}
-                to={`${appRoutes.thefuture}/${future.id}`}
+                to={`${appRoutes.futures}/${future.id}`}
                 className="col-xl-3 col-lg-4 col-md-6 col-sm-12"
               >
                 <img src={Cloud} alt={future.id} />

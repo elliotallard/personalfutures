@@ -1,0 +1,60 @@
+
+
+.middle {
+	min-height: 70%;
+}
+
+
+.x h1{
+	text-decoration: none;
+	color: black;
+}
+
+
+
+.FinalHorizontal img {
+	max-width: 80vh;
+	min-width: 120%;
+	vertical-align: center;
+	align-items: center;
+	margin-top: 13%;
+	margin-bottom: 13%;
+	min-width: 150%;
+	vertical-align: center;
+}
+
+.FinalHorizontal {
+	align-items: center;
+}
+
+
+.FinalQuadrant {
+	position: absolute;
+	background-color: #D8D8D8;
+	border-radius: 2px;
+	padding: 5px;
+	max-width: 35%;
+	white-space: pre-wrap;
+}
+
+#FinalQuadrantOne {
+	left: 20%;
+	top: 24%;
+}
+
+#FinalQuadrantTwo {
+	left: 53%;
+	top: 24%;
+}
+
+#FinalQuadrantThree {
+	left: 20%;
+	top: 54%;
+}
+
+#FinalQuadrantFour {
+	left: 53%;
+	top: 54%;
+}
+
+

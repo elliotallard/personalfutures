@@ -8,6 +8,8 @@ import ScrollLock, { TouchScrollable } from 'react-scrolllock';
 
 import HorizontalScroll from 'react-scroll-horizontal';
 
+import appRoutes from "../../shared/appRoutes";
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
 import './FutureBuilder.css'
@@ -214,7 +216,8 @@ class FutureBuilder extends Component {
                   <br/>
 
               
-                  <h3> &emsp; It might be 'practice' vs. 'research', or 'innovative' vs. 'maintaining' </h3> 
+                  <h3> &emsp; It might be 'professional practice' vs. 'research', or 'have a boss' vs. 'be a boss'. <br/>
+                       &emsp; Take some liberty, what are two polarized values you both see as appealing? </h3> 
 
                     
 
@@ -415,9 +418,12 @@ class FutureBuilder extends Component {
 
                   <div className="row QuizNav">
                     <Col md={{ span: 2, offset: 8 }}>
-                      <a href="#section9">
+                      <Link
+                          key="future"
+                          to={`${appRoutes.futures}`}
+                      >
                         <Button onClick={() => this.submitFuture()} variant="secondary">SUBMIT ></Button>
-                      </a>
+                      </Link>
                     </Col>
                   </div>  
                 </div> 
