@@ -12,7 +12,7 @@ import './HomePage.css';
 const homePage = () => {
 
   return (
-    <div class="container">
+    <div className="container">
 
 
       <header className="Title-description">

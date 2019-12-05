@@ -19,7 +19,7 @@ const db = firebase.firestore();
 
 
 
-class Future extends Component {
+class Futures extends Component {
 
   state = {
     futureList: [],
@@ -61,11 +61,11 @@ class Future extends Component {
             return (
               <Link
                 key={future.id}
-                to={`${appRoutes.thefutures}/${future.id}`}
+                to={`${appRoutes.thefuture}/${future.id}`}
                 className="col-xl-3 col-lg-4 col-md-6 col-sm-12"
               >
-                <img src={Cloud} alt={future.careerOne} />
-                <h5 className="">{future.careerOne}</h5>
+                <img src={Cloud} alt={future.id} />
+                <h5 className="">{future.id}</h5>
               </Link>
             );
           })}
@@ -79,4 +79,4 @@ class Future extends Component {
 };
 
 
-export default Future;
+export default Futures;
