@@ -4,12 +4,10 @@ import { Link } from "react-router-dom";
 import appRoutes from "../../shared/appRoutes";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Button from 'react-bootstrap/Button';
 import Cloud from '../../assets/cloud.png';
 
 
 import firebase from "firebase/app";
-import { firebaseConfig } from '../../secret.firebase.js';
 require("firebase/firestore");
 
 

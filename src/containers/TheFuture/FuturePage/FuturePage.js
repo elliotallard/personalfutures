@@ -12,7 +12,6 @@ import './FuturePage.css';
 
 
 import firebase from "firebase/app";
-import { firebaseConfig } from '../../../secret.firebase.js';
 require("firebase/firestore");
 
 
@@ -83,7 +82,7 @@ const FuturePage = () => {
 
 
                           <Col md={{ span: 6}}>
-                            <img src={Both} />
+                            <img src={Both} alt="future graph"/>
                           </Col>
 
                           <Col md={{ span: 2, offset: 3 }}>

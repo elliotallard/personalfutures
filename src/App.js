@@ -2,7 +2,6 @@ import React from 'react';
 import { Switch, Route, Redirect } from "react-router-dom";
 import appRoutes from "./shared/appRoutes";
 
-import { useParams } from "react-router";
 
 
 
@@ -25,10 +24,7 @@ import FuturePage from "./containers/TheFuture/FuturePage/FuturePage";
 
 function App() {
 
-  const url = window.location.href;
 
-  //gets last part of url, or the id
-  const id = url.substr(url.lastIndexOf('/') + 1)
   
 
 

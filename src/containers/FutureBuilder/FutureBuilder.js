@@ -1,10 +1,8 @@
 
 import React, { Component }  from "react";
 import { Link } from "react-router-dom";
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
+
 import Col from 'react-bootstrap/Col';
-import ScrollLock, { TouchScrollable } from 'react-scrolllock';
 
 import HorizontalScroll from 'react-scroll-horizontal';
 
@@ -15,7 +13,6 @@ import Button from 'react-bootstrap/Button';
 import './FutureBuilder.css'
 
 import HorizontalLine from "../../assets/horizontal.png";
-import VerticalLine from "../../assets/vertical.png";
 import Both from "../../assets/both.png";
 
 import Quadrant from "./BuilderComponents/Quadrant";
@@ -146,7 +143,7 @@ class FutureBuilder extends Component {
 
                           <Col md={{ span: 6}}>
                             <br/> <br/> <br/>
-                            <img src={HorizontalLine} />
+                            <img src={HorizontalLine} alt="horizontal line graph" />
                           </Col>
                           <Col md={{ span: 3, offset: 1 }}>
                               <input
@@ -195,7 +192,7 @@ class FutureBuilder extends Component {
 
 
                           <Col md={{ span: 6}}>
-                            <img src={Both} />
+                            <img src={Both} alt="future graph line" />
                           </Col>
 
                           <Col md={{ span: 1, offset: 3 }}>
@@ -252,7 +249,7 @@ class FutureBuilder extends Component {
 
 
                           <Col md={{ span: 6}}>
-                            <img src={Both} />
+                            <img src={Both} alt="future graph line" />
                           </Col>
 
                           <Col md={{ span: 2, offset: 3 }}>
@@ -395,7 +392,7 @@ class FutureBuilder extends Component {
 
 
                           <Col md={{ span: 6}}>
-                            <img src={Both} />
+                            <img src={Both} alt="future graph line" />
                           </Col>
 
                           <Col md={{ span: 2, offset: 3 }}>
