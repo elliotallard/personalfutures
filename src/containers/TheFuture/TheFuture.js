@@ -5,7 +5,7 @@ import appRoutes from "../../shared/appRoutes";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Cloud from '../../assets/cloud.png';
-
+import './TheFuture.css';
 
 import firebase from "firebase/app";
 require("firebase/firestore");
@@ -62,10 +62,9 @@ class Futures extends Component {
               <Link
                 key={future.id}
                 to={`${appRoutes.futures}/${future.id}`}
-                className="col-xl-3 col-lg-4 col-md-6 col-sm-12"
+                className="col-xl-3 col-lg-4 col-md-6 col-sm-12 cloud"
               >
                 <img src={Cloud} alt={future.id} />
-                <h5 className="">{future.id}</h5>
               </Link>
             );
           })}
