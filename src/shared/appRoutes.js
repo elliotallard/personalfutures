@@ -1,5 +1,5 @@
 export default {
-  home: "/home",
+  home: "/",
   futurebuilder: "/futurebuilder",
   about: "/about",
   futures: "/thefuture",
