@@ -4,12 +4,10 @@ import { Link } from "react-router-dom";
 import appRoutes from "../../shared/appRoutes";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Button from 'react-bootstrap/Button';
 import Cloud from '../../assets/cloud.png';
-
+import './TheFuture.css';
 
 import firebase from "firebase/app";
-import { firebaseConfig } from '../../secret.firebase.js';
 require("firebase/firestore");
 
 
@@ -19,7 +17,7 @@ const db = firebase.firestore();
 
 
 
-class Future extends Component {
+class Futures extends Component {
 
   state = {
     futureList: [],
@@ -55,17 +53,18 @@ class Future extends Component {
 
       <div className="container">
         <br />
-        <h1>Characters that we love...</h1>
+        <div className="row">
+          <center><h1>The Future</h1></center>
+        </div>
         <div className="row">
           {this.state.futureList.map((future, idx) => {
             return (
               <Link
                 key={future.id}
-                to={`${appRoutes.thefutures}/${future.id}`}
-                className="col-xl-3 col-lg-4 col-md-6 col-sm-12"
+                to={`${appRoutes.futures}/${future.id}`}
+                className="col-xl-3 col-lg-4 col-md-6 col-sm-12 cloud"
               >
-                <img src={Cloud} alt={future.careerOne} />
-                <h5 className="">{future.careerOne}</h5>
+                <img src={Cloud} alt={future.id} />
               </Link>
             );
           })}
@@ -79,4 +78,4 @@ class Future extends Component {
 };
 
 
-export default Future;
+export default Futures;

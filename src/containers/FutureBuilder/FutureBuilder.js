@@ -1,19 +1,18 @@
 
 import React, { Component }  from "react";
 import { Link } from "react-router-dom";
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
+
 import Col from 'react-bootstrap/Col';
-import ScrollLock, { TouchScrollable } from 'react-scrolllock';
 
 import HorizontalScroll from 'react-scroll-horizontal';
+
+import appRoutes from "../../shared/appRoutes";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
 import './FutureBuilder.css'
 
 import HorizontalLine from "../../assets/horizontal.png";
-import VerticalLine from "../../assets/vertical.png";
 import Both from "../../assets/both.png";
 
 import Quadrant from "./BuilderComponents/Quadrant";
@@ -144,7 +143,7 @@ class FutureBuilder extends Component {
 
                           <Col md={{ span: 6}}>
                             <br/> <br/> <br/>
-                            <img src={HorizontalLine} />
+                            <img src={HorizontalLine} alt="horizontal line graph" />
                           </Col>
                           <Col md={{ span: 3, offset: 1 }}>
                               <input
@@ -193,7 +192,7 @@ class FutureBuilder extends Component {
 
 
                           <Col md={{ span: 6}}>
-                            <img src={Both} />
+                            <img src={Both} alt="future graph line" />
                           </Col>
 
                           <Col md={{ span: 1, offset: 3 }}>
@@ -214,7 +213,8 @@ class FutureBuilder extends Component {
                   <br/>
 
               
-                  <h3> &emsp; It might be 'practice' vs. 'research', or 'innovative' vs. 'maintaining' </h3> 
+                  <h3> &emsp; It might be 'professional practice' vs. 'research', or 'have a boss' vs. 'be a boss'. <br/>
+                       &emsp; Take some liberty, what are two polarized values you both see as appealing? </h3> 
 
                     
 
@@ -249,7 +249,7 @@ class FutureBuilder extends Component {
 
 
                           <Col md={{ span: 6}}>
-                            <img src={Both} />
+                            <img src={Both} alt="future graph line" />
                           </Col>
 
                           <Col md={{ span: 2, offset: 3 }}>
@@ -392,7 +392,7 @@ class FutureBuilder extends Component {
 
 
                           <Col md={{ span: 6}}>
-                            <img src={Both} />
+                            <img src={Both} alt="future graph line" />
                           </Col>
 
                           <Col md={{ span: 2, offset: 3 }}>
@@ -415,9 +415,12 @@ class FutureBuilder extends Component {
 
                   <div className="row QuizNav">
                     <Col md={{ span: 2, offset: 8 }}>
-                      <a href="#section9">
+                      <Link
+                          key="future"
+                          to={`${appRoutes.futures}`}
+                      >
                         <Button onClick={() => this.submitFuture()} variant="secondary">SUBMIT ></Button>
-                      </a>
+                      </Link>
                     </Col>
                   </div>  
                 </div> 

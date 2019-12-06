@@ -14,7 +14,7 @@ const Footer = () => {
 
 		<div className="container" id="Button-row" >
 			<div className="row footer">
-		    	<NavLink className="navLink" to={appRoutes.futureBuilder}>
+		    	<NavLink className="navLink" to={appRoutes.futurebuilder}>
 		      		<Button variant="outline-secondary" className="footer"> 
 		      			Start >
 			     	</Button> 

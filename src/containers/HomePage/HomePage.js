@@ -1,9 +1,7 @@
 
 import React from "react";
-import { Link } from "react-router-dom";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Button from 'react-bootstrap/Button';
 
 import './HomePage.css';
 
@@ -12,7 +10,7 @@ import './HomePage.css';
 const homePage = () => {
 
   return (
-    <div class="container">
+    <div className="container">
 
 
       <header className="Title-description">

@@ -1,9 +1,7 @@
 
 import React from "react";
-import { Link } from "react-router-dom";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Button from 'react-bootstrap/Button';
 import './About.css'
 
 
@@ -23,7 +21,9 @@ const aboutPage = () => {
 
     The following activity, created by Peter Scupelli, encourages us to explore the possibilities of our future. Through completing the activity, one creates 4 alternative futures, with each containing desirable and undesirable aspects of a future life. <br/><br/>
 
-Finally, you can choose to submit your response to The Future, an archive of responses to this activity. You can visit the archive here. <br/>
+Finally, you can choose to submit your response to The Future, an archive of responses to this activity. You can visit the archive by clicking on 'The Future'. <br/><br/>
+
+For more information about Peter and the context of this activity, visit <a href="https://dexignfutures.org/">dexingfutures.org</a> .
 
         </p>
 

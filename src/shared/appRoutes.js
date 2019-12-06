@@ -1,8 +1,8 @@
 export default {
   home: "/home",
-  futureBuilder: "/futurebuilder",
+  futurebuilder: "/futurebuilder",
   about: "/about",
-  thefuture: "/thefuture",
-  futures: "/thefuture/:id"
+  futures: "/thefuture",
+  future: "/thefuture/:id"
 
 };
