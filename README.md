@@ -1,5 +1,22 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+For the class Software Structures for User Interfaces, I built a React app with a Firebase backend. The app virtualizes an activity developed by Peter Scupelli, that guides participants in making 4 alternative futures for themselves - each containing frightening & alluring elements. At the end, users can submit these responses to an archive of these futures, and can view what the future might look like. 
+
+
+Huge thanks to @lxieyang (my TA) (this is his GitHub handle) for all of the help, as well as Peter for showing me the activity in the first place.
+
+<3 
+
+
+Youtube Demo:
+https://youtu.be/qTL5l8ippP8
+
+Web link:
+~ coming soon ~
+
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
