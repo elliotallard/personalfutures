@@ -3,6 +3,10 @@ import Example from "./Example";
 
 import Col from 'react-bootstrap/Col';
 
+
+{/*Quadrant page format*/}
+
+
 const Quadrant = (props) => {
 	return (
 		

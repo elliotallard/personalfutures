@@ -1,8 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import appRoutes from "../../shared/appRoutes";
-import Button from 'react-bootstrap/Button';
 
+import Button from 'react-bootstrap/Button';
 import './Footer.css'
 
 const Footer = () => {

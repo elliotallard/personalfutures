@@ -1,23 +1,22 @@
-
 import React, { Component }  from "react";
 import { Link } from "react-router-dom";
-
-import Col from 'react-bootstrap/Col';
+import appRoutes from "../../shared/appRoutes";
 
 import HorizontalScroll from 'react-scroll-horizontal';
 
-import appRoutes from "../../shared/appRoutes";
 
+{/* BOOTSTRAP */}
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
+import Col from 'react-bootstrap/Col';
 import './FutureBuilder.css'
 
+{/* IMAGES */}
 import HorizontalLine from "../../assets/horizontal.png";
 import Both from "../../assets/both.png";
-
 import Quadrant from "./BuilderComponents/Quadrant";
 
-
+{/* FIREBASE */}
 import firebase from "firebase/app";
 import { firebaseConfig } from '../../secret.firebase.js';
 require("firebase/firestore");
@@ -47,7 +46,7 @@ class FutureBuilder extends Component {
 
 
 
-
+{/* INPUT HANDLERS FOR QUIZ */}
 
   careerOneInputHandler = event => {
     this.setState({
@@ -99,6 +98,11 @@ class FutureBuilder extends Component {
     });
   };
 
+
+
+
+  {/* FIREBASE SUBMIT*/}
+
   submitFuture = () => {
     db.collection("futures").add({
       careerOne: this.state.careerOne,
@@ -125,36 +129,37 @@ class FutureBuilder extends Component {
               <HorizontalScroll reverseScroll={true}>
 
 
-                
-                      <div className="child" id="section1">
+                  {/* AXIS LABELING */}
 
-                        <h3> 1. Consider two alternative careers you imagine yourself having. </h3>   
-                        
-                        <div className="row horizontal">
-                          <Col md={{ span: 2}}>
-                            <input
-                            type="text"
-                            value={this.state.careerOne}
-                            onChange={e => this.careerOneInputHandler(e)}
-                            placeholder="Career option 1"
-                          />
-                          </Col>
+                  <div className="child" id="section1">
+
+                    <h3> 1. Consider two alternative careers you imagine yourself having. </h3>   
+                    
+                    <div className="row horizontal">
+                      <Col md={{ span: 2}}>
+                        <input
+                        type="text"
+                        value={this.state.careerOne}
+                        onChange={e => this.careerOneInputHandler(e)}
+                        placeholder="Career option 1"
+                      />
+                      </Col>
 
 
-                          <Col md={{ span: 6}}>
-                            <br/> <br/> <br/>
-                            <img src={HorizontalLine} alt="horizontal line graph" />
-                          </Col>
-                          <Col md={{ span: 3, offset: 1 }}>
-                              <input
-                            type="text"
-                            value={this.state.careerTwo}
-                            onChange={e => this.careerTwoInputHandler(e)}
-                            placeholder="Career option 2"
-                          />
-                          </Col>
+                      <Col md={{ span: 6}}>
+                        <br/> <br/> <br/>
+                        <img src={HorizontalLine} alt="horizontal line graph" />
+                      </Col>
+                      <Col md={{ span: 3, offset: 1 }}>
+                          <input
+                        type="text"
+                        value={this.state.careerTwo}
+                        onChange={e => this.careerTwoInputHandler(e)}
+                        placeholder="Career option 2"
+                      />
+                      </Col>
 
-                        </div>
+                    </div>
 
                     <h3> &emsp; It could be 'professional soccer player', or 'consultant'. </h3> 
                     
@@ -172,133 +177,129 @@ class FutureBuilder extends Component {
 
 
 
-                <div className="child" id="section2" >
-                  <h3> 2. Now, consider another axis of uncertainty. </h3> 
-                  <br/>
+                  <div className="child" id="section2" >
+                    <h3> 2. Now, consider another axis of uncertainty. </h3> 
+                    <br/>
 
-                  <div className="row title">
-                    <input
-                            type="text"
-                            value={this.state.axisOne}
-                            onChange={e => this.axisOneInputHandler(e)}
-                            placeholder="Uncertainty 1 ..."
-                          />
-                  </div>
+                    <div className="row title">
+                      <input
+                              type="text"
+                              value={this.state.axisOne}
+                              onChange={e => this.axisOneInputHandler(e)}
+                              placeholder="Uncertainty 1 ..."
+                            />
+                    </div>
 
-                  <div className="row horizontal both">
-                          <Col md={{ span: 1}}>
-                            {this.state.careerOne}
-                          </Col>
+                    <div className="row horizontal both">
+                            <Col md={{ span: 1}}>
+                              {this.state.careerOne}
+                            </Col>
 
 
-                          <Col md={{ span: 6}}>
-                            <img src={Both} alt="future graph line" />
-                          </Col>
+                            <Col md={{ span: 6}}>
+                              <img src={Both} alt="future graph line" />
+                            </Col>
 
-                          <Col md={{ span: 1, offset: 3 }}>
-                              {this.state.careerTwo}
-                          </Col>
+                            <Col md={{ span: 1, offset: 3 }}>
+                                {this.state.careerTwo}
+                            </Col>
 
-                  </div>
+                    </div>
 
-                  <div className="row title">
-                    <input
-                            type="text"
-                            value={this.state.axisTwo}
-                            onChange={e => this.axisTwoInputHandler(e)}
-                            placeholder="Uncertainty 2 ..."
-                          />
-                  </div>
+                    <div className="row title">
+                      <input
+                              type="text"
+                              value={this.state.axisTwo}
+                              onChange={e => this.axisTwoInputHandler(e)}
+                              placeholder="Uncertainty 2 ..."
+                            />
+                    </div>
 
-                  <br/>
+                    <br/>
 
-              
-                  <h3> &emsp; It might be 'professional practice' vs. 'research', or 'have a boss' vs. 'be a boss'. <br/>
-                       &emsp; Take some liberty, what are two polarized values you both see as appealing? </h3> 
+                
+                    <h3> &emsp; It might be 'professional practice' vs. 'research', or 'have a boss' vs. 'be a boss'. <br/>
+                         &emsp; Take some liberty, what are two polarized values you both see as appealing? </h3> 
 
+                      
+
+                    <div className="row">
+                      <Col md={{ span: 3, offset: 5 }}>
+                        <a href="#section3">
+                          <Button variant="outline-secondary">Next ></Button>
+                        </a>
+                      </Col>
+                    </div>
                     
-
-                  <div className="row">
-                    <Col md={{ span: 3, offset: 5 }}>
-                      <a href="#section3">
-                        <Button variant="outline-secondary">Next ></Button>
-                      </a>
-                    </Col>
-                  </div>
-                  
-                </div>
-
-
-
-
-
-
-                <div className="child" id="section3">
-                  <h3> 3. Take a look! You just built a futures graph. </h3> 
-
-                  <div className="row">
-                    <Col md={{ span: 2, offset: 5}}>
-                      {this.state.axisOne}
-                    </Col>
-                  </div>
-                  <br/> <br/>
-                  <div className="row horizontal both">
-                          <Col md={{ span: 1}}>
-                            {this.state.careerOne}
-                          </Col>
-
-
-                          <Col md={{ span: 6}}>
-                            <img src={Both} alt="future graph line" />
-                          </Col>
-
-                          <Col md={{ span: 2, offset: 3 }}>
-                              {this.state.careerTwo}
-                          </Col>
-
-                  </div>
-
-                  <div className="row">
-                    <Col md={{ span: 2, offset: 5}}>
-                      {this.state.axisTwo}
-                    </Col>
-                    <br/>
-                    <br/>
                   </div>
 
 
-                  <div className="row">
-                    <Col md={{ span: 2, offset: 5 }}>
-                      <a href="#section4">
-                        <Button variant="outline-secondary">Next ></Button>
-                      </a>
-                    </Col>
-                  </div>  
-                </div> 
+
+
+                  <div className="child" id="section3">
+                    <h3> 3. Take a look! You just built a futures graph. </h3> 
+
+                    <div className="row">
+                      <Col md={{ span: 2, offset: 5}}>
+                        {this.state.axisOne}
+                      </Col>
+                    </div>
+                    <br/> <br/>
+                    <div className="row horizontal both">
+                      <Col md={{ span: 1}}>
+                        {this.state.careerOne}
+                      </Col>
+
+                      <Col md={{ span: 6}}>
+                        <img src={Both} alt="future graph line" />
+                      </Col>
+
+                      <Col md={{ span: 2, offset: 3 }}>
+                          {this.state.careerTwo}
+                      </Col>
+                    </div>
+
+                    <div className="row">
+                      <Col md={{ span: 2, offset: 5}}>
+                        {this.state.axisTwo}
+                      </Col>
+                      <br/>
+                      <br/>
+                    </div>
+
+
+                    <div className="row">
+                      <Col md={{ span: 2, offset: 5 }}>
+                        <a href="#section4">
+                          <Button variant="outline-secondary">Next ></Button>
+                        </a>
+                      </Col>
+                    </div>  
+                  </div> 
 
 
 
 
 
+                  {/* QUADRANT FILL-INS */}
+
+                  <div className="child" id="section4">
+                    <Quadrant 
+                      career={this.state.careerOne} 
+                      uncertainty={this.state.axisOne} 
+                      textbox={this.state.quadrantOne} 
+                      changed={this.quadrantOneInputHandler}
+                    />
 
 
-                <div className="child" id="section4">
-                  <Quadrant 
-                    career={this.state.careerOne} 
-                    uncertainty={this.state.axisOne} 
-                    textbox={this.state.quadrantOne} 
-                    changed={this.quadrantOneInputHandler}
-                  />
-
-
-                  <div className="row">
-                    <Col md={{ span: 2, offset: 5 }}>
-                      <a href="#section5">
-                        <Button variant="outline-secondary">Next ></Button>
-                      </a>
-                    </Col>
+                    <div className="row">
+                      <Col md={{ span: 2, offset: 5 }}>
+                        <a href="#section5">
+                          <Button variant="outline-secondary">Next ></Button>
+                        </a>
+                      </Col>
+                    </div>
                   </div>
-                </div>
 
 
 
@@ -370,6 +371,7 @@ class FutureBuilder extends Component {
 
 
 
+                {/* GRAPH VIEW PAGE */}
 
                 <div className="child" id="section8">
                   <h3> You are done :) Take a look, take a screenshot. If you feel comfortable, you can submit this to the public archive on this site, called "The Future". Please be nice, moderate your own content. </h3> 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-
+{/*An example response of what a quadrant might be filled in with*/}
 
 const Example = () => {
 	return (

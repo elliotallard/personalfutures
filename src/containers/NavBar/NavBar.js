@@ -1,9 +1,12 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import appRoutes from "../../shared/appRoutes";
-import Button from 'react-bootstrap/Button';
 
+{/*STYLING */}
+import Button from 'react-bootstrap/Button';
 import './NavBar.css'
+
+
 
 const NavBar = () => {
   

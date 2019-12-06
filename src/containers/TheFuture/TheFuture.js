@@ -1,11 +1,15 @@
-
 import React, {Component} from "react";
 import { Link } from "react-router-dom";
 import appRoutes from "../../shared/appRoutes";
 
+{/* STYLING */}
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Cloud from '../../assets/cloud.png';
 import './TheFuture.css';
+
+{/* IMAGES */}
+import Cloud from '../../assets/cloud.png';
+
+
 
 import firebase from "firebase/app";
 require("firebase/firestore");
