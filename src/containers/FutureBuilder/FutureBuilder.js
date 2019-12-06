@@ -5,18 +5,17 @@ import appRoutes from "../../shared/appRoutes";
 import HorizontalScroll from 'react-scroll-horizontal';
 
 
-{/* BOOTSTRAP */}
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import './FutureBuilder.css'
 
-{/* IMAGES */}
+
 import HorizontalLine from "../../assets/horizontal.png";
 import Both from "../../assets/both.png";
 import Quadrant from "./BuilderComponents/Quadrant";
 
-{/* FIREBASE */}
+
 import firebase from "firebase/app";
 import { firebaseConfig } from '../../secret.firebase.js';
 require("firebase/firestore");
@@ -46,7 +45,7 @@ class FutureBuilder extends Component {
 
 
 
-{/* INPUT HANDLERS FOR QUIZ */}
+// INPUT HANDLERS FOR QUIZ 
 
   careerOneInputHandler = event => {
     this.setState({
@@ -101,7 +100,7 @@ class FutureBuilder extends Component {
 
 
 
-  {/* FIREBASE SUBMIT*/}
+// FIREBASE SUBMIT
 
   submitFuture = () => {
     db.collection("futures").add({

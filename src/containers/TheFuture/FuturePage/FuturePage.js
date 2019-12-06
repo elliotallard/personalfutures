@@ -3,13 +3,11 @@ import { Link } from "react-router-dom";
 import appRoutes from "../../../shared/appRoutes";
 import { useParams } from "react-router";
 
-{/* STYLING */}
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './FuturePage.css';
 
-{/* IMAGES */}
 import Both from "../../../assets/both.png";
 
 
